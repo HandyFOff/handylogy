@@ -1,0 +1,79 @@
+/* ======Миксины====== */
+@import 'mixins.scss';
+/* ======/Миксины====== */
+
+/* ======Шрифты====== */
+@import 'fonts.scss';
+/* ======/Шрифты====== */
+
+/* ======Переменные====== */
+@import 'variables.scss';
+
+$font: Roboto;
+$dfont: 16px;
+
+/* ======/Переменные====== */
+
+/* ======Обнуление====== */
+@import 'null.scss';
+/* ======/Обнуление====== */
+
+/* ======Пресеты====== */
+@import '../custom/slick/style.scss';
+/* ======Пресеты====== */
+
+body {
+    font-family: $font;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: $maxWidthContainer + px;
+}
+
+.header {
+    background: linear-gradient(90deg, #5629D9 0%, rgba(79, 43, 183, 0.949331) 50.67%, rgba(98, 61, 206, 0.9) 100%);
+    padding: 20px 30px;
+
+    &>.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-family: 'Golos';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+
+        color: #FFFFFF;
+    }
+}
+.nav {
+    display: flex;
+    gap: 40px;
+
+		&__item {
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            color: #FFFFFF;
+		}
+}
+
+.footer {
+    padding: 30px 0;
+    background: linear-gradient(90deg, #5629D9 0%, rgba(79, 43, 183, 0.949331) 50.67%, rgba(98, 61, 206, 0.9) 100%);
+    text-align: center;
+}
+.copyright {
+    font-family: 'Golos';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
