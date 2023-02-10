@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import Slide from './Slide';
 
 /*
 
@@ -21,28 +22,17 @@ export default function Slick() {
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         autoplay: true,
         autoplaySpeed: 7000,
       };
+
       return (
         <div className='slider'>
           <Slider {...settings}>
-                <div className='slider__card'>
-                  <span className='slider__card_category'>психология</span>
-                  <h1 className='slider__card_title'>Тест на определение темперамента</h1>
-                  <button className='slider__card_btn'>Пройти тест</button>
-                </div>
-                <div className='slider__card'>
-                  <span className='slider__card_category'>психология</span>
-                  <h1 className='slider__card_title'>Тест на определение темперамента</h1>
-                  <button className='slider__card_btn'>Пройти тест</button>
-                </div>
-                <div className='slider__card'>
-                  <span className='slider__card_category'>психология</span>
-                  <h1 className='slider__card_title'>Тест на определение темперамента</h1>
-                  <button className='slider__card_btn'>Пройти тест</button>
-                </div>
+            <Slide title="Test Number One" category="psychology" img="https://www.fonstola.ru/pic/202006/1680x1050/fonstola.ru_395042.jpg"/>
+            <Slide title="Test Number Two" category="psychology" img="https://i.ytimg.com/vi/Zk5LI-uoyAA/maxresdefault.jpg"/>
+            <Slide title="Test Number Three" category="psychology" img="https://i.ytimg.com/vi/v2HEh8QQYEg/maxresdefault.jpg"/>
           </Slider>
         </div>
       );

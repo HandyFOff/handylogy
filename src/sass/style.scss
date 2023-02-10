@@ -77,3 +77,321 @@ body {
     color: #FFFFFF;
 }
 
+.tests {
+    padding: 60px 0;
+    &>.container {
+        display: flex;
+        flex-direction: column;
+        max-width: 680px;
+    }
+
+    &__card {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 40%);
+        background-blend-mode: multiply;
+        background-size: cover;
+        padding: 20px 30px;
+
+        border-radius: 5px;
+
+        &_category {
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+
+            color: #EAEAEA;
+        }
+
+        &_title {
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            margin: 5px 0 15px 0;
+
+            color: #FFFFFF;
+        }
+
+        &_btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #5629D9 0%, rgba(79, 43, 183, 0.949331) 50.67%, rgba(98, 61, 206, 0.9) 100%);
+            border-radius: 5px;
+            padding: 12px 25px;
+
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+
+            color: #FFFFFF;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_title {
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+
+            color: rgba(79, 43, 183, 0.949331);
+
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+
+        margin: 30px 0;
+    }
+
+    &__btn {
+        align-self: center;
+    }
+}
+
+.btn-more {
+    background: linear-gradient(90deg, #5629D9 0%, rgba(79, 43, 183, 0.949331) 50.67%, rgba(98, 61, 206, 0.9) 100%);
+    border-radius: 5px;
+    padding: 15px 30px;
+
+    font-family: 'Golos';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+    color: #FFFFFF;
+}
+
+.notenoughfound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    &__error {
+        font-size: 72px;
+    }
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #5629D9 0%, rgba(79, 43, 183, 0.949331) 50.67%, rgba(98, 61, 206, 0.9) 100%);
+    &>.container {
+        min-width: 1100px;
+        max-width: 1100px;
+        padding: 60px 0;
+        flex: 1;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_counter {
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            color: #FFFFFF;
+        }
+
+        &_back {
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+
+            color: #FFFFFF;
+
+        }
+    }
+
+    &__content {
+        padding: 70px 0 60px 0;
+
+        &_title {
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            color: #FFFFFF;
+
+            -user-select: none;
+            -webkit-user-select: none; /* Chrome/Safari */        
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+ */
+        }
+
+        &_choices {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            color: #FFFFFF;
+            margin-top: 50px;
+            &>* {
+                -user-select: none;
+                -webkit-user-select: none; /* Chrome/Safari */        
+                -moz-user-select: none; /* Firefox */
+                -ms-user-select: none; /* IE10+ */
+
+                transition: all .3s ease;
+            }
+            & > *:hover {
+                transform: scale(1.05);
+                transform-origin: left;
+                text-shadow: #b3b3b3 2px 0px 1px;
+            }
+
+        }
+    }
+}
+
+.result {
+
+
+    &__hero {
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 40%);
+        padding: 150px 0;
+        max-width: 100%;
+        text-align: center;
+
+        &_category {
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            color: #EAEAEA;
+        }
+
+        &_title {
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            margin: 5px 0 25px 0;
+
+            color: #FFFFFF;
+        }
+
+        &_btn {
+            background: linear-gradient(90deg, #5629D9 0%, rgba(79, 43, 183, 0.949331) 50.67%, rgba(98, 61, 206, 0.9) 100%);
+            border-radius: 5px;
+            padding: 15px 30px;
+            display: inline-block;
+
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+    }
+
+    &__content {
+        background: #F9F9F9;
+        padding: 60px 0;
+
+        &>.container {
+            max-width: 860px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        &_title {
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            color: #4F4F4F;
+        }
+
+        &_description {
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            letter-spacing: 0.01em;
+            line-height: 26px;
+            color: #4F4F4F;
+        }
+
+        &_moreinfo {
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            color: #3C7EE1;
+
+        }
+    }
+
+    &__recomendation {
+        &>.container {
+            max-width: 681px;
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+        }
+
+        &_nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &_content {
+        }
+    }
+
+    &__recomendation {
+        padding: 60px 0;
+
+        &_btn {
+            align-self: center;
+        }
+    }
+}
+.container {
+}
+.recomendation {
+    &__nav {
+
+        &_title {
+            font-family: 'Golos';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            color: rgba(79, 43, 183, 0.949331);
+
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+}
+.btn-more {
+}
