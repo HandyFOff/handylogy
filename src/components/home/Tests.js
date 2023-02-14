@@ -8,7 +8,7 @@ export default function Tests() {
             <div className='container'>
                 <div className='tests__nav'>
                     <h1 className='tests__nav_title'>Тесты</h1>
-                    <div>grid/row</div>
+                    {/* <div>grid/row</div> */}
                 </div>
                 <div className='tests__content'>
                     {testsData.map(data => <Card key={data.id} id={data.id} title={data.name} category={data.category} img={data.image}/>)}

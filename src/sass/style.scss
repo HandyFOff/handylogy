@@ -62,7 +62,42 @@ body {
             font-size: 18px;
             color: #FFFFFF;
 		}
+
+    @media (max-width: $md3) {display: none;}
 }
+
+// Burger 
+.burger__button {
+    display: none;
+    @media (max-width: $md3) {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        &>div {
+            background-color: #fff;
+            width: 30px;
+            height: 5px;
+            border-radius: 3px;
+        }
+    }
+}
+
+.burger {
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        &>a {
+            color: #5629D9;
+            font-size: 24px;
+        }
+    }
+}
+
+
 
 .footer {
     padding: 30px 0;
@@ -78,7 +113,7 @@ body {
 }
 
 .tests {
-    padding: 60px 0;
+    padding: 60px 25px;
     &>.container {
         display: flex;
         flex-direction: column;
@@ -190,8 +225,14 @@ body {
     &>.container {
         min-width: 1100px;
         max-width: 1100px;
-        padding: 60px 0;
+        padding: 60px 25px;
         flex: 1;
+    }
+
+    @media (max-width: 1220px) {
+        &>.container {
+            min-width: 0;
+        }
     }
 
     &__header {
@@ -205,6 +246,9 @@ body {
             font-weight: 700;
             font-size: 48px;
             color: #FFFFFF;
+
+            @media (max-width: $md3) {font-size: 36px}
+            @media (max-width: 365px) {font-size: 32px}
         }
 
         &_back {
@@ -215,6 +259,8 @@ body {
 
             color: #FFFFFF;
 
+            @media (max-width: $md3) {font-size: 24px}
+            @media (max-width: 365px) {font-size: 18px}
         }
     }
 
@@ -227,11 +273,14 @@ body {
             font-weight: 700;
             font-size: 48px;
             color: #FFFFFF;
+            word-break: break-word;
 
             -user-select: none;
             -webkit-user-select: none; /* Chrome/Safari */        
             -moz-user-select: none; /* Firefox */
             -ms-user-select: none; /* IE10+ */
+
+            @media (max-width: $md3) {font-size: 36px}
         }
 
         &_choices {
@@ -244,6 +293,9 @@ body {
             font-size: 32px;
             color: #FFFFFF;
             margin-top: 50px;
+
+            @media (max-width: $md3) {font-size: 24px}
+
             &>* {
                 -user-select: none;
                 -webkit-user-select: none; /* Chrome/Safari */        
@@ -263,13 +315,14 @@ body {
 }
 
 .result {
-
-
     &__hero {
         background-blend-mode: multiply;
         background-size: cover;
         background-color: rgba(0, 0, 0, 40%);
-        padding: 150px 0;
+        padding: 150px 25px;
+        @media (max-width: $md3) {
+            padding: 100px 55px;
+        }
         max-width: 100%;
         text-align: center;
 
@@ -279,6 +332,9 @@ body {
             font-weight: 600;
             font-size: 24px;
             color: #EAEAEA;
+
+            @media (max-width: $md3) {font-size: 22px}
+            @media (max-width: 365px) {font-size: 18px}
         }
 
         &_title {
@@ -287,6 +343,10 @@ body {
             font-weight: 600;
             font-size: 48px;
             margin: 5px 0 25px 0;
+
+            @media (max-width: $md3) {font-size: 42px}
+            @media (max-width: $md4) {font-size: 36px}
+            @media (max-width: 365px) {font-size: 28px}
 
             color: #FFFFFF;
         }
@@ -302,12 +362,14 @@ body {
             font-weight: 700;
             font-size: 20px;
             color: #FFFFFF;
+
+            @media (max-width: $md5) {font-size: 16px}
         }
     }
 
     &__content {
         background: #F9F9F9;
-        padding: 60px 0;
+        padding: 60px 25px;
 
         &>.container {
             max-width: 860px;
@@ -348,6 +410,7 @@ body {
 
     &__recomendation {
         &>.container {
+            padding: 0 25px;
             max-width: 681px;
             display: flex;
             flex-direction: column;

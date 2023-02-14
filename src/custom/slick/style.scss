@@ -19,7 +19,11 @@
         background-blend-mode: multiply;
         background-size: cover;
         background-color: rgba(0, 0, 0, 40%);
-        padding: 150px 0;
+        padding: 150px 55px;
+
+        @media (max-width: $md3) {
+            padding: 100px 55px;
+        }
 
         &_category {
             font-family: 'Golos';
@@ -34,15 +38,20 @@
             font-style: normal;
             font-weight: 600;
             font-size: 48px;
-            margin: 5px 0 25px 0;
-
+            margin: 5px 0 40px 0;
             color: #FFFFFF;
+            letter-spacing: -1px;
+
+            @media (max-width: $md3) {font-size: 42px; margin-bottom: 30px;}
+            @media (max-width: $md4) {font-size: 36px; margin-bottom: 20px;}
         }
 
         &_btn {
             background: linear-gradient(90deg, #5629D9 0%, rgba(79, 43, 183, 0.949331) 50.67%, rgba(98, 61, 206, 0.9) 100%);
             border-radius: 5px;
             padding: 15px 30px;
+
+            display: inline-block;
 
             font-family: 'Golos';
             font-style: normal;
@@ -51,27 +60,41 @@
             color: #FFFFFF;
         }
     }
+
+    .slick-arrow {
+        display: none;
+    }
 }
 
 
 .slick-arrow {
-    z-index: 100000000;
+    z-index: 100;
     width: 40px !important;
     height: 45px !important;
-    background-color: #623DCE !important;
+    background-color: #623DCE !important; 
+
+    @media (max-width: 425px) {display: none}
 }
 
 .slick-arrow.slick-prev {
     border-radius: 0 5px 5px 0;
     left: 0;
+
+    @media (max-width: $md5) {display: none}
 }
 
 .slick-arrow.slick-next {
     border-radius: 5px 0 0 5px;
     right: 0;
+
+    @media (max-width: $md5) {display: none}
 }
 
 .slick-track {
     display: flex;
     justify-content: center;
+}
+
+.slick-arrow {
+    display: none;
 }

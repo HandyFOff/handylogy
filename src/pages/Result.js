@@ -11,7 +11,7 @@ export default function Result() {
     const [content, setContent] = useState(null);
 
     useEffect(() => {
-        setContent(data[id])
+        setContent(data[id]);
     }, [id])
 
     return (
@@ -27,7 +27,7 @@ export default function Result() {
                         <div className='result__content'>
                             <div className='container'>
                                 <h1 className='result__content_title'>Ваши результаты:</h1>
-                                <p className='result__content_description'>Вы - сангвиник. Сангвиник — один из четырёх типов темперамента в классификации Гиппократа. Человека сангвинического темперамента можно охарактеризовать как живого, подвижного, сравнительно легко переживающего неудачи и неприятности. Также это личность, характеризующаяся высокой психической активностью, энергичностью, работоспособностью, быстротой и живостью движений, разнообразием и богатством мимики, быстрым темпом речи. Сангвиник стремится к частой смене впечатлений, легко и быстро отзывается на окружающие события, общителен. </p>
+                                <p className='result__content_description'></p>
                                 <Link to='/' className='result__content_moreinfo'>Узнать поподробнее об результате теста</Link>
                             </div>
                         </div>
@@ -35,7 +35,7 @@ export default function Result() {
                             <div className='container'>
                                 <div className='result__recomendation_nav recomendation__nav'>
                                     <h1 className='recomendation__nav_title'>Тесты</h1>
-                                    <div>grid/row</div>
+                                    {/* <div>grid/row</div> */}
                                 </div>
                                 <div className='result__recomendation_content recomendation__content'>
                                     {data.map(data => <Card key={data.id} id={data.id} title={data.name} category={data.category} img={data.image}/>)}
